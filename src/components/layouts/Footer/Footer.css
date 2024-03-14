@@ -1,0 +1,9 @@
+footer{
+    width: 100vw;
+    height: 50px;
+    background: rgb(168, 88, 8);
+    text-align: center;
+}
+.creator{
+    font-size: 35px;
+}

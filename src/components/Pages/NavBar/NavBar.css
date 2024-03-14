@@ -1,0 +1,20 @@
+.nav{
+    display: flex;
+    width: 100vw;
+    height: 17vh;
+    justify-content: center;
+    justify-content: space-evenly;
+    background: red;
+}
+.list{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.react{
+    display: flex;
+    width: 150px;
+    height: 150px;
+}

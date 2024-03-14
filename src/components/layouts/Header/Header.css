@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 10px 0px 20px 0px;
+  
+}
+.divTitle {
+    display: flex;
+
+}
+.divDescription{
+    display: flex;
+  
+}
+.divTitle > .title{
+    padding: 0px 30px 0px 0px;
+}
+.divDescription > .description{
+    padding: 0px 30px 0px 0px;
+}
+
+input{
+    height: 3.5vh;
+    border-radius: 8px;
+}
+.content{
+    width: 100vw;
+}
+
+.work{
+    width: 100vw;
+    text-align: center;   
+    margin: 0px 0px 30px; 
+}
+
+hr{
+    width: 90vw;
+    margin: 0px 0px 0px 100px;
+}
