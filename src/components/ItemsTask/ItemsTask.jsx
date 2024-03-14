@@ -1,7 +1,4 @@
 import React from 'react'
+import './ItemsTask.css'
 
-export const ItemsTask = () => {
-  return (
-    <div>ItemsTask</div>
-  )
-}
+export const ItemsTask = ({content}) => <li>{content}</li>

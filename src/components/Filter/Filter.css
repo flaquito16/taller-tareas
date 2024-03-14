@@ -1,6 +1,9 @@
 .filter{
     display: flex;
     width: 100vw;
-    height: 8vh;
-    margin: 20px 0px 0px;
+    padding: 20px 0px 10px 160px;
+}
+
+.fil{
+    padding: 0px 15px 0px 0px;
 }

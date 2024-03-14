@@ -5,8 +5,12 @@ export const Filter = () => {
   return (
     <>
     <div className='filter'>
-      <p>filtrar</p>
-      <input type="text" />
+      <p className='fil'>filtrar:</p>
+      <select name="nn" id="">
+        <option value="text">todas</option>
+        <option value="text">todas las tareas no echas</option>
+        <option value="text">todas las tareas archivadas</option>
+      </select>
       </div>
     </>
   )

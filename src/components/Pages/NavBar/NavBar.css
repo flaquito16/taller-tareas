@@ -4,7 +4,7 @@
     height: 17vh;
     justify-content: center;
     justify-content: space-evenly;
-    background: red;
+    background: rgb(167, 4, 4);
 }
 .list{
     display: flex;
@@ -17,4 +17,8 @@
     display: flex;
     width: 150px;
     height: 150px;
+}
+
+h2{
+    color: white;
 }

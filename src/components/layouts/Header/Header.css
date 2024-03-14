@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100vw;
     margin: 10px 0px 20px 0px;
   
@@ -32,6 +32,8 @@ input{
     width: 100vw;
     text-align: center;   
     margin: 0px 0px 30px; 
+    font-size: 30px;
+    color: yellowgreen;
 }
 
 hr{
