@@ -1,7 +1,24 @@
 import React from 'react'
+import {useContext} from 'react'
 import './Header.css'
+import { tasksContext } from '../../Context/Context'
+
+
 
 export const Header = () => {
+  const context = useContext(tasksContext)
+  const handleCreateTask = () => {
+  
+    const ItemsTask = {
+      _id: 1,
+      title: input1,
+      description: input2,
+      state: false  
+    }
+  
+    let listTasks = [...context.tasks, ItemsTask]
+    context.setTasks(listTasks)
+  }
   return (
     <>
     <div className='header'>
@@ -13,7 +30,7 @@ export const Header = () => {
     <p className='description'>Descripcion de la tarea:</p>
     <input className='input2' type="text" placeholder='descripcion' />
     </div>
-    <button>Crear</button>
+    <button onClick={handleCreateTask}>Crear</button>
 
     </div>
         <div className='content'>
