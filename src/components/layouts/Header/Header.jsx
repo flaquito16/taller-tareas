@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useContext} from 'react'
 import './Header.css'
 import { tasksContext } from '../../Context/Context'
@@ -6,13 +6,15 @@ import { tasksContext } from '../../Context/Context'
 
 
 export const Header = () => {
+  const [taskTitle, settaskTitle] = useState ('')
+  const [taskDescription, settaskDescription] = useState ('')
   const context = useContext(tasksContext)
   const handleCreateTask = () => {
   
     const ItemsTask = {
       _id: 1,
-      title: input1,
-      description: input2,
+      title: taskTitle,
+      description: taskDescription,
       state: false  
     }
   
@@ -24,11 +26,11 @@ export const Header = () => {
     <div className='header'>
         <div className='divTitle'>
     <p className='title'>Titulo de la tareas:</p>    
-    <input className='input1' type="text" placeholder='titulo' />
+    <input className='taskTitle' type="text" placeholder='titulo' />
     </div>
     <div className='divDescription'>
     <p className='description'>Descripcion de la tarea:</p>
-    <input className='input2' type="text" placeholder='descripcion' />
+    <input className='taskDescription' type="text" placeholder='descripcion' />
     </div>
     <button onClick={handleCreateTask}>Crear</button>
 
