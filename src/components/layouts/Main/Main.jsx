@@ -18,7 +18,7 @@ export const Main = () => {
       <Filter/>
     <Container>
     {
-     otherContext.tasks.map( task => <ItemsTask taskTitle={task.title} taskDescription={task.description} /> )
+     otherContext.tasks.map( task=> <ItemsTask taskTitle={task.title} taskDescription={task.description} /> )
           }
     </Container>
     </main>
