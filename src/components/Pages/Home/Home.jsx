@@ -10,13 +10,7 @@ import { tasksContext } from '../../Context/Context'
 
 
 export const Home = () => {
-const otherContext = useContext(tasksContext)
 
-  useEffect(() => {
-    
-  }
-
-  )
 
   return (
     <>
