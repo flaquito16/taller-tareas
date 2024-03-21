@@ -3,7 +3,7 @@ main{
     justify-content: space-between;
     width: 50vw;
     height: 50vh;
-    background: rgb(167, 4, 4);
+    /* background: rgb(167, 4, 4); */
     border-radius: 10px;
     margin: 0px 0px 35px 450px;
 }

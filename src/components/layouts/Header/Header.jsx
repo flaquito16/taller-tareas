@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {useContext} from 'react'
 import './Header.css'
 import { tasksContext } from '../../Context/Context'
-import { ItemsTask } from '../../ItemsTask/ItemsTask'
 
 
 
@@ -12,14 +11,14 @@ export const Header = () => {
   const context = useContext(tasksContext)
   const handleCreateTask = () => {
   
-    const ItemTask = {
+    const itemTask = {
       _id: 1,
       title: titleTask,
       description: descriptionTask,
       state: false  
     }
   
-    let listTasks = [...context.tasks, ItemTask]
+    let listTasks = [...context.tasks, itemTask]
     context.setTasks(listTasks)
   }
   return (
@@ -27,11 +26,11 @@ export const Header = () => {
     <div className='header'>
         <div className='divTitle'>
     <p className='title'>Titulo de la tareas:</p>    
-    <input onChange={event=>setTitleTask[event.target.value]}  type="text" placeholder='titulo' id='title' />
+    <input onChange={event=>setTitleTask(event.target.value)}  type="text" placeholder='titulo' id='title' />
     </div>
     <div className='divDescription'>
     <p className='description'>Descripcion de la tarea:</p>
-    <input  onChange={event=>setDescriptionTask[event.target.value]}  type="text" placeholder='descripcion' id='description' />
+    <input  onChange={event=>setDescriptionTask(event.target.value)}  type="text" placeholder='descripcion' id='description' />
     </div>
     <button onClick={handleCreateTask}>Crear</button>
 
@@ -39,8 +38,7 @@ export const Header = () => {
         <div className='content'>
     <p className='work'>usted tiene dos tareas hechas y le faltan mas tareas</p>
     <hr />
-    </div>
-  
+    </div>  
 
     </>
   )

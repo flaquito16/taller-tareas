@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import './Main.css'
-import {ItemsTask} from '../../ItemsTask/ItemsTask'
-import {Filter} from '../../Filter/Filter'
+import { ItemsTask } from '../../ItemsTask/ItemsTask'
 import { Container } from '../../Container/Container'
 import { tasksContext } from '../../Context/Context'
 
@@ -11,18 +10,17 @@ export const Main = () => {
   useEffect(() => {
     console.log(otherContext.tasks)
   }, [otherContext.tasks])
+  
 
   return (
     <>
-    <main>
-      <Filter/>
-    <Container>
-    {
-     otherContext.tasks.map( task=> <ItemsTask taskTitle={task.title} taskDescription={task.description} /> )
+      <main>
+        <Container>
+          {            
+            otherContext.tasks.map((element) => <ItemsTask content={element.title} description={element.description}/>)
           }
-    </Container>
-    </main>
-    
+        </Container>
+      </main>
     </>
   )
 }

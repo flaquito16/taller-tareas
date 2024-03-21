@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Container = () => {
-  return (
-    <div>Container</div>
-  )
+export const Container = ({children}) => {
+    return(
+        <ul>
+            {children}
+        </ul>
+    )
 }
