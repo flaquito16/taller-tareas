@@ -5,7 +5,6 @@ import { Header } from '../../layouts/Header/Header'
 import {Filter} from '../../Filter/Filter'
 import { Main } from '../../layouts/Main/Main'
 import { Footer } from '../../layouts/Footer/Footer'
-import { tasksContext } from '../../Context/Context'
 
 
 

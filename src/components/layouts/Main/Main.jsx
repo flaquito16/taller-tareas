@@ -1,7 +1,6 @@
 import React from 'react'
 import './Main.css'
 import {ItemsTask} from '../../ItemsTask/ItemsTask'
-import { Header } from '../Header/Header'
 import {Filter} from '../../Filter/Filter'
 import { Container } from '../../Container/Container'
 import { tasksContext } from '../../Context/Context'
@@ -19,7 +18,7 @@ export const Main = () => {
       <Filter/>
     <Container>
     {
-     otherContext.tasks.map( task => <ItemTask titleTask={task.title} content={task.description} /> )
+     otherContext.tasks.map( task => <ItemsTask taskTitle={task.title} taskDescription={task.description} /> )
           }
     </Container>
     </main>
