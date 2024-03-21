@@ -23,4 +23,5 @@ export const Main = () => {
       </main>
     </>
   )
+  
 }
