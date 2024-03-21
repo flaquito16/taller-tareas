@@ -1,5 +1,13 @@
 li{
-    color: white;
+    display: flex;
+    color: white;   
    
 }
 
+.cont{
+    margin: 0px 130px 0px;
+}
+
+.descrip{
+    margin: 0px 300px 0px 160px;
+}
