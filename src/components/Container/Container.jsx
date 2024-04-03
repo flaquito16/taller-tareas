@@ -3,9 +3,8 @@ import './Container.css'
 
 export const Container = ({children}) => {
     return(
-        <ul>
+        <ul className='container-tasks'>
             {children}
-            
         </ul>
     )
 }
