@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import {useContext} from 'react'
 import './Header.css'
 import { tasksContext } from '../../Context/Context'
-
+import { v4 as uuidv4 } from 'uuid'
+import { Info } from '../../Info/Info'
 
 
 export const Header = () => {
@@ -12,7 +13,7 @@ export const Header = () => {
   const handleCreateTask = () => {
   
     const itemTask = {
-      _id: 1,
+      id: uuidv4(),
       title: titleTask,
       description: descriptionTask,
       state: false  
@@ -36,7 +37,7 @@ export const Header = () => {
 
     </div>
         <div className='content'>
-    <p className='work'>usted tiene dos tareas hechas y le faltan mas tareas</p>
+    <Info/>
     <hr />
     </div>  
 

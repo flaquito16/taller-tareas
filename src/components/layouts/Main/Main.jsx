@@ -5,11 +5,11 @@ import { Container } from '../../Container/Container'
 import { tasksContext } from '../../Context/Context'
 
 export const Main = () => {
-  const otherContext = useContext(tasksContext)
+  const context = useContext(tasksContext)
 
   useEffect(() => {
-    console.log(otherContext.tasks)
-  }, [otherContext.tasks])
+    console.log(context.filterTask)
+  }, [context.filterTask])
   
 
   return (
@@ -17,7 +17,7 @@ export const Main = () => {
       <main>
         <Container>
           {            
-            otherContext.tasks.map((element) => <ItemsTask content={element.title} description={element.description}/>)
+            context.tasks.map((task) => <ItemsTask key={task.id} idTask={task.id} content={task.title} description={task.description}/>)
           }
         </Container>
       </main>

@@ -1,7 +1,40 @@
-li{
+
+
+
+
+.item-task > .circle-state{
+    
+    width: 5%;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.item-task > .cont{
+    font-size: 1.5rem;
+    width: 30%;
+    
+}
+
+.item-task > input[type=checkbox]{
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+}
+
+.checked{
+    text-decoration: line-through;
+    font-weight: bold;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: green;
+}
+
+.item-task > .circle-green{
+    background-color: green;
+}
+
+.item{
     display: flex;
-    color: white;   
-   
 }
 
 .cont{
