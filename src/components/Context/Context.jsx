@@ -7,6 +7,8 @@ export const TasksProvider = ({children}) => {
     const  [tasks, setTasks] = useState ([])
     const [filterTask, setFilterTask] = useState ([])
     const [beginTask, setBeginTask] = useState ([])
+    const [pendingTask, setPedingTask] = useState (0)
+    const [doneTask, setDoneTask] = useState(0)
   
   const update = (taskId, newStatus) =>{
     setTasks(prevTasks =>
@@ -17,7 +19,7 @@ export const TasksProvider = ({children}) => {
   }
 
   return (
-    <tasksContext.Provider value={{tasks, setTasks,filterTask, setFilterTask, update, beginTask, setBeginTask}}>
+    <tasksContext.Provider value={{tasks, setTasks,filterTask, setFilterTask, update, beginTask, setBeginTask, pendingTask, setPedingTask, doneTask, setDoneTask}}>
     {children}
   </tasksContext.Provider>
   )

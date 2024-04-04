@@ -23,7 +23,7 @@ export const Filter = () => {
 
     }else{
       // context.setFilterTask(context.filterTask)   
-      context.setTasks(context.tasks,context.filterTask)
+      context.setBeginTask(context.tasks.filter(task => task.status),context.filterTask.filter(task => !task.status))
      
       
     }
