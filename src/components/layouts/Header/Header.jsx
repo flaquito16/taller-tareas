@@ -20,7 +20,10 @@ export const Header = () => {
     }
   
     let listTasks = [...context.tasks, itemTask]
+    let listTasks2 = [...context.filterTask, itemTask]
     context.setTasks(listTasks)
+    context.setfilterTask(listTasks2)
+    container = setfilterTask(listTasks2)
   }
   return (
     <>

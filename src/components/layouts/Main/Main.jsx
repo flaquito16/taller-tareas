@@ -6,11 +6,8 @@ import { tasksContext } from '../../Context/Context'
 
 export const Main = () => {
   const context = useContext(tasksContext)
+ 
 
-  useEffect(() => {
-    console.log(context.filterTask)
-  }, [context.filterTask])
-  
 
   return (
     <>
