@@ -5,8 +5,9 @@ export const tasksContext = createContext()
 
 export const TasksProvider = ({children}) => {
     const  [tasks, setTasks] = useState ([])
-    const [filterTask, setfilterTask] = useState ([])
-  let container =[]
+    const [filterTask, setFilterTask] = useState ([])
+    const [beginTask, setBeginTask] = useState ([])
+  
   const update = (taskId, newStatus) =>{
     setTasks(prevTasks =>
     prevTasks.map(task=>
@@ -16,7 +17,7 @@ export const TasksProvider = ({children}) => {
   }
 
   return (
-    <tasksContext.Provider value={{tasks, setTasks,filterTask, setfilterTask, update, container}}>
+    <tasksContext.Provider value={{tasks, setTasks,filterTask, setFilterTask, update, beginTask, setBeginTask}}>
     {children}
   </tasksContext.Provider>
   )

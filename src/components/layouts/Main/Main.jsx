@@ -14,8 +14,9 @@ export const Main = () => {
       <main>
         <Container>
           {            
-            context.tasks.map((task) => <ItemsTask key={task.id} idTask={task.id} content={task.title} description={task.description}/>)
+        context.tasks.map((task) => <ItemsTask key={task.id} idTask={task.id} content={task.title} description={task.description}/>)
           }
+          
         </Container>
       </main>
     </>

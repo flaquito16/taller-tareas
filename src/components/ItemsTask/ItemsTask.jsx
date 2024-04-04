@@ -8,7 +8,7 @@ export const ItemsTask = ({idTask,content, description}) => {
     const {tasks, update} =useContext(tasksContext)
     const task = tasks.find(task => task.id=== idTask)
 
-    const handleCheck = () => {
+    let handleCheck = () => {
         update(idTask, !task.status)
     }
 

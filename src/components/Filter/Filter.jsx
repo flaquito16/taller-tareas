@@ -9,17 +9,23 @@ export const Filter = () => {
   const context = useContext(tasksContext)
   
   const handleFilter = (event) =>{
-    
+
     let current = event.target.value
     
     
     
     if (current === 'pendientes') {
-      context.setTasks(context.tasks.filter(task => !task.status))
+      context.setTasks(context.filterTask.filter(task => !task.status))
+  
+
     }else if (current === 'realizadas') {
       context.setTasks(context.tasks.filter(task => task.status))
+
     }else{
-      context.setfilterTask(context.filterTask)
+      // context.setFilterTask(context.filterTask)   
+      context.setTasks(context.tasks,context.filterTask)
+     
+      
     }
 
   }
